@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+ul,li{
+    list-style: none;
+}
+nav{
+    width:100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10;
+}
+.navi {
+    background-color: blueviolet;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem;
+ 
+}
+.navi a{
+    color:cornsilk;
+    padding:30px;
+}
+.navi a:hover{
+    background-color: #999;
+}
+
+
+  .container {
+    perspective: 100px;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .parallax1 {
+    transform: translateZ(-100px);
+    height: 100vh;
+    background: skyblue;
+  }
+  
+  .parallax2 {
+    transform: translateZ(-50px);
+    height: 100vh;
+    background: gray;
+  }
+  
+  .parallax3 {
+    transform: translateZ(0px);
+    height: 100vh;
+    background: gold;
+  }
+  .parallax4 {
+    transform: translateZ(-10px);
+    height: 100vh;
+    background: rgb(16, 58, 122);
+  }
+  .parallax5 {
+    transform: translateZ(-40px);
+    height: 100vh;
+    background: rgb(13, 139, 70);
+  }
+  .parallax6 {
+    transform: translateZ(0px);
+    height: 100vh;
+    background: rgb(151, 14, 89);
+  }
+
+  .heading {
+    color: #0bd;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 600px 0;
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  .active {
+    opacity: 1;
+    transition: 1s;
+    transform: translateX(200px);
+  }
+  
+  .scroll {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
